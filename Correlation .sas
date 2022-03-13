@@ -1,0 +1,9 @@
+DATA cows; 
+INPUT weight h_girth @@; 
+DATALINES; 
+641 205 620 212 633 213 651 216 640 216 
+666 217 650 218 688 219 680 221 670 226 
+; 
+PROC CORR; 
+VAR weight h_girth; 
+RUN;
